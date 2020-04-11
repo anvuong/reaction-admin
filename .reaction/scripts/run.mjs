@@ -3,6 +3,9 @@ import _ from "lodash";
 import childProcess from "child_process";
 import Log from "./logger.mjs";
 import appSetup from "./appSetup.mjs";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 function run() {
   appSetup();

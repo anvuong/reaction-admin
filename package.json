@@ -49,6 +49,7 @@
     "core-js": "^2.6.10",
     "csv-parse": "^4.6.3",
     "deep-equal": "^1.0.1",
+    "dotenv": "^8.2.0",
     "envalid": "^6.0.0",
     "font-awesome": "^4.7.0",
     "graphql": "^14.5.8",
