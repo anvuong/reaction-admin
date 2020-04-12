@@ -7481,12 +7481,7 @@ md5@^2.0.0:
     crypt "~0.0.1"
     is-buffer "~1.1.1"
 
-mdi-material-ui@^6.2.0:
-  version "6.13.2"
-  resolved "https://registry.yarnpkg.com/mdi-material-ui/-/mdi-material-ui-6.13.2.tgz#0bac3c544be8faf4d639dd195306810cb630e034"
-  integrity sha512-JyFOQjs6XmAIxesSeItriwre2vY5cKbSVab5BrLp6NBPBva+58ehClJgW9HOBN2AWZHTyueugldWX/u+4SjsIg==
-
-mdi-material-ui@~5.8.0:
+mdi-material-ui@5.8.0, mdi-material-ui@~5.8.0:
   version "5.8.0"
   resolved "https://registry.yarnpkg.com/mdi-material-ui/-/mdi-material-ui-5.8.0.tgz#2b92231a37ac52bef46e4ef5450ca7432fec5695"
   integrity sha512-KixZVfNg0ejURv9CIliB1M3kl4Soe6f6yAFjFNsoYPMvGGw1AhnQKGZ3EOEKOIdp2X9YeZFOaO+i9e4ZHUrpNA==
