@@ -20,6 +20,9 @@ const getShopQuery = gql`
       shopLogoUrls {
         primaryShopLogoUrl
       }
+      shopBannerUrls {
+        primaryShopBannerUrl
+      }
       storefrontUrls {
         storefrontHomeUrl
         storefrontLoginUrl

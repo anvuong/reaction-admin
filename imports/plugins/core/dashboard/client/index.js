@@ -11,6 +11,7 @@ import SystemSettingsRegion from "./components/SystemSettingsRegion";
 import SettingsDashboard from "./components/SettingsDashboard";
 import ShopAddressSettings from "./components/ShopAddressSettings";
 import ShopLogoUrls from "./components/ShopLogoUrls";
+import ShopBannerUrls from "./components/ShopBannerUrls";
 import ShopSettingsForm from "./components/ShopSettingsForm";
 import StorefrontUrls from "./components/StorefrontUrls";
 import SystemInformation from "./components/SystemInformation";
@@ -73,6 +74,13 @@ registerBlock({
   region: "ShopSettings",
   name: "ShopLogoUrls",
   component: ShopLogoUrls,
+  priority: 3
+});
+
+registerBlock({
+  region: "ShopSettings",
+  name: "ShopBannerUrls",
+  component: ShopBannerUrls,
   priority: 3
 });
 
