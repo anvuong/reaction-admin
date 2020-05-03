@@ -31,14 +31,14 @@ function OperatorLanding() {
         <Grid item>
           <Typography align="center" variant="body1">
             {/* eslint-disable-next-line max-len */}
-            Use Reaction Admin to manage <Link to="/orders">Orders</Link>, <Link to="/products">Products</Link>, <Link to="/tags">Tags</Link>, <Link to="/accounts">Accounts</Link>, and <Link to="/navigation">Navigation</Link>, or change shop settings.
+            Sử dụng trang admin này để quản lý thông tin <Link to="/orders">Đơn hàng</Link>, <Link to="/products">Sản phẩm</Link>, <Link to="/tags">Tags</Link>, <Link to="/accounts">Tài khoản</Link>, hoặc thay đổi <Link to="/settings/shop">thiết lập</Link> của shop.
           </Typography>
         </Grid>
-        <Grid item>
+        {/* <Grid item>
           <Typography align="center" variant="body1">
             See our <MuiLink href="https://docs.reactioncommerce.com/docs/dashboard">Store Operator’s Guide</MuiLink> for more information.
           </Typography>
-        </Grid>
+        </Grid> */}
       </Fragment>
     );
   } else {

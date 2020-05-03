@@ -1,4 +1,4 @@
-import i18nextBrowserLanguageDetector from "i18next-browser-languagedetector";
+// import i18nextBrowserLanguageDetector from "i18next-browser-languagedetector";
 import i18nextSprintfPostProcessor from "i18next-sprintf-postprocessor";
 import i18nextFetch from "i18next-fetch-backend";
 import i18nextMultiLoadBackendAdapter from "i18next-multiload-backend-adapter";
@@ -19,7 +19,7 @@ const configuredI18next = i18next
   // https://github.com/i18next/i18next-browser-languageDetector
   // Sets initial language to load based on `lng` query string
   // with various fallbacks.
-  .use(i18nextBrowserLanguageDetector)
+  // .use(i18nextBrowserLanguageDetector)
   // https://github.com/i18next/i18next-sprintf-postProcessor
   // key: 'Hello %(users[0].name)s, %(users[1].name)s and %(users[2].name)s',
   // i18next.t('key2', { postProcess: 'sprintf', sprintf: { users: [{name: 'Dolly'}, {name: 'Molly'}, {name: 'Polly'}] } });
