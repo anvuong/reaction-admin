@@ -8,6 +8,7 @@ export const navigationItemFragment = gql`
       content {
         language
         value
+        iconUrl
       }
       url
       isUrlRelative

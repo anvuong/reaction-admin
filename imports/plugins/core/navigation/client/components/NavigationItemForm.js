@@ -32,6 +32,7 @@ const styles = (theme) => ({
 
 const navigationItemFormSchema = new SimpleSchema({
   name: String,
+  iconUrl: String,
   url: String,
   classNames: {
     type: String,
@@ -63,13 +64,14 @@ class NavigationItemForm extends Component {
 
   handleFormSubmit = (input) => {
     const { createNavigationItem, mode, navigationItem, onCloseForm, updateNavigationItem, shopId, sortableTreeNode, onSetSortableNavigationTree } = this.props;
-    const { name, url, isUrlRelative, isVisible, isPrivate, isSecondary, shouldOpenInNewWindow, classNames } = input;
+    const { name, iconUrl, url, isUrlRelative, isVisible, isPrivate, isSecondary, shouldOpenInNewWindow, classNames } = input;
 
     const navigationItemUpdate = {
       draftData: {
         content: {
           value: name,
-          language: "en"
+          language: "en",
+          iconUrl
         },
         url,
         isUrlRelative,
@@ -147,11 +149,13 @@ class NavigationItemForm extends Component {
     const { classes, onCloseForm, mode, navigationItem } = this.props;
 
     const nameInputId = `name_${this.uniqueInstanceIdentifier}`;
+    const iconUrlInputId = `iconUrl_${this.uniqueInstanceIdentifier}`;
     const urlInputId = `url_${this.uniqueInstanceIdentifier}`;
     const classNamesInputId = `classNames_${this.uniqueInstanceIdentifier}`;
 
     navigationItemFormSchema.labels({
       name: i18next.t("navigationItem.displayName"),
+      iconUrl: i18next.t("navigationItem.iconUrl"),
       url: i18next.t("navigationItem.url"),
       isUrlRelative: i18next.t("navigationItem.isUrlRelative"),
       shouldOpenInNewWindow: i18next.t("navigationItem.shouldOpenInNewWindow"),
@@ -176,6 +180,10 @@ class NavigationItemForm extends Component {
               <Field name="name" label={i18next.t("navigationItem.displayName")} labelFor={nameInputId}>
                 <TextInput id={nameInputId} name="name" />
                 <ErrorsBlock names={["name"]} />
+              </Field>
+              <Field name="iconUrl" label={i18next.t("navigationItem.iconUrl")} labelFor={iconUrlInputId}>
+                <TextInput id={iconUrlInputId} name="iconUrl" />
+                <ErrorsBlock iconUrls={["iconUrl"]} />
               </Field>
               <Field name="url" label={i18next.t("navigationItem.url")} labelFor={urlInputId}>
                 <TextInput id={urlInputId} name="url" />

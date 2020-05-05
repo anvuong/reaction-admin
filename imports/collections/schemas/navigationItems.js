@@ -15,6 +15,9 @@ export const NavigationItemContent = new SimpleSchema({
   },
   value: {
     type: String
+  },
+  iconUrl: {
+    type: String
   }
 });
 
