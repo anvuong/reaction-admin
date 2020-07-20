@@ -66,7 +66,7 @@
     "immutable": "^3.8.2",
     "jquery-i18next": "1.2.1",
     "libphonenumber-js": "1.4.2",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.19",
     "match-sorter": "^2.3.0",
     "mdi-material-ui": "5.8.0",
     "meteor-node-stubs": "^0.4.1",
