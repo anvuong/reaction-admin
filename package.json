@@ -70,7 +70,7 @@
     "match-sorter": "^2.3.0",
     "mdi-material-ui": "5.8.0",
     "meteor-node-stubs": "^0.4.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "moment-timezone": "^0.5.23",
     "mongodb": "^3.5.2",
     "node-fetch": "^2.3.0",
