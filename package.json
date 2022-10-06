@@ -175,7 +175,7 @@
     "jsdoc": "^3.6.3",
     "nock": "^9.6.1",
     "react-addons-test-utils": "15.6.2",
-    "snyk": "^1.217.3",
+    "snyk": "^1.996.0",
     "wait-for-expect": "^1.2.0"
   },
   "scripts": {
